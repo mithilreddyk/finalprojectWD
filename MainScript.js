@@ -7,6 +7,7 @@ if(msg) msg.addEventListener('submit',postpage)
 function registerpage(e){
     e.preventDefault();
     let username1=document.getElementById('username').value;
+    let username2=document.getElementById('lname').value;
     let emailaddress=document.getElementById('email').value;
     let passwrd=document.getElementById('password').value;
 
@@ -50,7 +51,7 @@ class User{
         this.password=password1;
     }
 }
-let regi= new User(username1,emailaddress,passwrd);
+let regi= new User(username1,username2,emailaddress,passwrd);
      console.log(regi);
 }  
 function loginpage(e)
